@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amal's Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #name{
+            font-family: cursive;
+            color:chocolate;
+        }
+      
+        #para1{
+            top: 170px;
+        }
+        #para2{
+            top: 50px;
+            
+        }
+        #para3{
+            top: 150px;
+        
+        }
+        #para4{
+            top: 200px;
+        }
+        #section-about{
+            top: 1px;
+            color:white;
+            
+        }
+        #para6{
+            top: 45px;
+            color:white;
+        }
+     
+        
+    </style>
+
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-1 text-md-center" href="#" id="name">AMAL'S COFFEE SHOP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-product">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Subsidiary
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">The Cake World</a></li>
+                  <li><a class="dropdown-item" href="#">Mapple Juice World</a></li>
+                  <li><a class="dropdown-item" href="#">Bake World</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-contact">Contact Us</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            
+          <div class="carousel-item active">           
+            <img src="coffee2.jpg" class="d-block w-100" alt="...">
+            <p id="para1" class="carousel-caption fs-1">"We Serve Coffee With Happinness"</p>
+
+          </div>
+          <div class="carousel-item">
+            <img src="coffee4.jpg" class="d-block w-100" alt="...">
+            <p id="para4" class="carousel-caption fs-1 text-end">"The Craftmanship"</p>
+
+           
+          </div>
+          <div class="carousel-item">
+            <img src="coffee5.jpg" class="d-block w-100" alt="...">
+            <p id="para2" class="carousel-caption fs-1">"Speciality Coffee Roastery"</p>
+            <p id="para3" class="carousel-caption fs-3">"We Roast Daily Speciality Grade Coffee Directly Sourced From Farmers"</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container" id="section-product">
+      <div class="row">
+          <div class="col col md-3">
+            <div class="card" style="width: 20rem;">
+                <img src="Cafe-Americano-2_0.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%=data[0].name%></h5>
+                  <p class="card-text">Taste of Pure Black</p>
+                  <a href="#" class="btn btn-primary"><%=data[0].price%></a>
+                </div>
+              </div>
+              
+          </div>
+          <div class="col col md-3">
+            <div class="card" style="width: 20rem;">
+                <img src="Cafe-Mocha_0.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= data[1].name %></h5>
+                  <p class="card-text">Delicious Mocha</p>
+                  <a href="#" class="btn btn-primary"><%= data[1].price %></a>
+                </div>
+              </div>
+              
+          </div>
+          
+          
+          <div class="col col md-3">
+            <div class="card" style="width: 20rem;">
+                <img src="Cafe-frappe_2.png" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><%= data[2].name %></h5>
+                  <p class="card-text">Chilled Coffee</p>
+                  <a href="#" class="btn btn-primary"><%= data[2].price %></a>
+                </div>
+              </div>
+              
+          </div>
+          </div>
+
+      </div><br><br>
+      <div class="container-fluid">
+        
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+              <div class="carousel-item active">           
+                <img src="amala.jpg" class="d-block w-100" alt="...">
+            <h1 id="section-about" class="text-center carousel-caption">ABOUT US</h1>
+          <p id="para6" class="carousel-caption">AMAL'S Coffee started with a passion for coffee and an inspiration by Specialty Coffee Roasters to share their know-how with the regional market.  We believe in offering our customers an extraordinary experience, so we approach roasting with dedication in pursuit of perfection.
+            This dedication is shared with our long-term partners: farmers and cooperatives across the coffee belt, equipment/accessory manufacturers, and the coffee academy.
+            DIRECT SOURCING
+            We forge long lasting partnerships with farmers and cooperatives to secure green coffee beans. We cup many coffees every year but only select those that carry unique characteristics.
+            ROASTERY
+            Our team of roasters, certified Q-graders, works diligently to extract the perfect aroma and flavours from each coffee bean.  Every batch is cupped separately for Quality.  The roastery is ISO2200 certified and is equipped with the latest roasting technology from PROBAT of Germany.
+            EQUIPMENT
+            The portfolio of equipment includes traditional espresso machines, fully automatic Beans to Cup machines, filter coffee machines and accessories for the Specialty Coffee market.
+            TECHNICAL SUPPORT
+            Our team of technicians provides fast and complete preventive maintenance and repair support 24/7 across INDIA. 
+            We collaborate with the Espresso Academy Firenze, Italy and the Specialty Coffee Association to provide courses for Barista, Manual Brewing, Latte Art and Cupping.
+            CONSULTING 
+            
+            We provide expertise in concept design and business models around coffee for cafés, restaurants, corporates and others. 
+            
+            </p>
+            </div>
+            </div>
+      </div>
+      <div class="footer" id="section-contact">
+          <div class="row">
+              <div class="col col-3">
+                <b>Contact Us</b><br><br>
+
+                Amal purple Roastry L.L.C. <br><br>
+                
+                Trivandrum Park 1<br><br>
+                
+                P.O. Box: 695101<br><br>
+                
+                Kerala | India<br><br>
+                
+                Tel: 8848827027<br><br>
+                
+                hello@amalscoffee.com<br><br><br>
+              </div>
+              <div class="col col-3">
+                <a href="#">Customer Care</a><br><br>
+                <a href="#">Privacy Policy</a><br><br>
+                <a href="#">Refund Policy</a><br><br>
+                <a href="#">Shipping Policy</a><br><br>
+                <a href="#">Terms of Service</a><br><br>
+                <a href="#">Blog</a>
+            </div>
+            <div class="col col md-4">
+             <b>Enter your email address<br></b><br><br>
+             <div class="input-group flex-nowrap">
+              <span class="input-group-text" id="addon-wrapping">@</span>
+              <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+            </div>
+             <br><br><br> to receive updates on new coffee arrivals<br> and promotions.
+             <br><br>
+             <button type="button" class="btn btn-danger btn-lg">Subscribe</button>
+            </div>
+            <div class="col col md-3">
+                Our business Amal Purple Roastry is made by a team of experts in coffee sourcing, processing, roasting and cupping. Our team includes coffee professionals and Q Arabica Graders, certified roasters and cuppers from SCA.
+                We offer a wide range of high quality Specialty Coffee beans sourced directly from farmers and cooperatives.
+                As an One Stop Coffee solution, we offer a big variety of coffee machines, tools and accessories and training courses for people who love coffee.
+            </div>
+          </div>
+      </div>
+      <div class="container-fluid">
+
+        <div class="container my-5">  
+          
+              <hr class="my-5">
+          
+              <footer class="bg-light text-center text-white">
+                
+                <div class="container p-4 pb-0">
+                
+                  <section class="mb-4">
+                    
+                    <a
+                       class="btn btn-primary btn-floating m-1"
+                       style="background-color: #3b5998;"
+                       href="#!"
+                       role="button"
+                       ><i class="fa fa-facebook-f"></i
+                      ></a>
+          
+                    
+                    <a
+                       class="btn btn-primary btn-floating m-1"
+                       style="background-color: #55acee;"
+                       href="#!"
+                       role="button"
+                       ><i class="fa fa-twitter"></i
+                      ></a>
+          
+                    
+                    <a
+                       class="btn btn-primary btn-floating m-1"
+                       style="background-color: #dd4b39;"
+                       href="#!"
+                       role="button"
+                       ><i class="fa fa-google"></i
+                      ></a>
+          
+                    
+                    <a
+                       class="btn btn-primary btn-floating m-1"
+                       style="background-color: #ac2bac;"
+                       href="#!"
+                       role="button"
+                       ><i class="fa fa-instagram"></i
+                      ></a>
+          
+                    
+                    <a
+                       class="btn btn-primary btn-floating m-1"
+                       style="background-color: #0082ca;"
+                       href="#!"
+                       role="button"
+                       ><i class="fa fa-linkedin"></i
+                      ></a>
+                    
+                    <a
+                       class="btn btn-primary btn-floating m-1"
+                       style="background-color: #333333;"
+                       href="#!"
+                       role="button"
+                       ><i class="fa fa-github"></i
+                      ></a>
+                  </section>
+                  
+                </div>
+                
+          
+            
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  © 2021 Copyright:
+                  <a class="text-white" href="amalpothencode@gmail.com/">amalpothencode@gmail.com</a>
+                </div>
+                
+              </footer>
+          
+              
+              
+          </div>
+      </div>
+      
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
